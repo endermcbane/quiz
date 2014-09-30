@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <script type="text/javascript"  src="js/jquery-2.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <script src="js/app.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Pacifico|Dancing+Script|Playball|Coming+Soon' rel='stylesheet' type='text/css'>
+  
+  <title> Art Quiz </title>
+</head>
+
+<body id = 'id2'>
+<header>
+	<span id = 'topTitle'>Name the Artist</span>
+
+	<div id = 'counter'>Question: <span id = 'qcount'>1</span> of 5</div>
+	<div id = 'correct'>Correct Answers: <span id = 'correctCount'>0</span></div>
+</header>
+
+
+<div class = 'intro'>
+	<p class = 'titleLine'>How well do you know art?</p>
+	Chances are you have seen all of these paintings before, but can you name the artist?<br>
+	You will be shown five paintings and each of the artists listed below will be used only once during the quiz. <br>
+	Submit your answer by clicking on the artists name.
+	<p id= 'luck'>Good Luck!<p>
+
+	<input class = 'button1' type="button" name="begin" value="Begin">
+</div>
+
+
+<div id = 'answers'>
+	<ul class = 'answerWrapper'>
+		<li  id = "choice1"><input class = 'myButton' type="button" name="choice" value="Claude Monet"></li>
+		<li  id = "choice2"><input class = 'myButton' type="button" name="choice" value="Vincent van Gogh"></li>
+		<li  id = "choice3"><input class = 'myButton' type="button" name="choice" value="Georges Seurat"></li>
+		<li  id = "choice4"><input class = 'myButton'type="button" name="choice" value="Edvard Munch"></li>
+		<li  id = "choice5"><input class = 'myButton' type="button" name="choice" value="Rembrandt"></li>
+		<span class="stretcher"></span>
+	</ul>
+</div>
+
+<div class = 'post' id = 'right'>
+	Correct! <br>
+	<div class = 'results'>Artist: <span id = 'artistName'></span> <br> 
+	Title: <span id = 'paintingTitle'></span></div>
+	<input class = 'button1'type="button" name="continue" value="Continue">
+</div>
+
+
+<div class = 'post' id = 'wrong'>
+	Nope! <br>
+	<div class = 'results'> Artist: <span id = 'artistName1'></span> <br> 
+	Title: <span id = 'paintingTitle1'></span></div>
+	<input class = 'button1' type="button" name="continue" value="Continue">
+</div>
+
+
+<div id = 'newGame'>
+You got <span id = "finalCount"></span> correct.<br>
+<br>
+	<input class = 'button1' type="button" name="newGame" value="New Game">
+</div>
+
+</body>
+
+</html>
